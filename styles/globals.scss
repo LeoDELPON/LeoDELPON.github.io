@@ -1,4 +1,144 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import './root.scss';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  overflow: overlay;
+}
+
+main {
+  margin: 0px auto;
+  width:100%;
+}
+
+// animation CSS for hover
+nav {
+  li {
+    a {
+      position: relative;
+      &:not(.button)::after {
+        transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+        background: #00E0BC;
+      }
+      &:not(.button)::before {
+        transition: width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+        background: #845EC2;
+      }
+      &:not(.button)::before {
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        width:0;
+        right:0;
+        height: 2px;
+      }
+      &:not(.button):hover::before {
+        width:98%;
+        left: 0;
+      }
+      &:not(.button)::after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        width:0;
+        right:0;
+        height: 2px;
+      }
+      &:not(.button):hover::after {
+        width:98%;
+        left: 0;
+      }
+    }
+  }
+}
+
+// footer items
+.last-footer-item {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    transform-origin: center;
+    bottom: -7.2rem;
+    left: 0.5rem;
+    width:1px;
+    height:90px;
+    margin: 0 auto;
+    background: #ccd6f6;
+  }
+}
+
+// // Title section
+// .section-block {
+//   h3 {
+//     position: relative;
+//     &::after {
+//       content: '';
+//       margin-left: 23px;
+//       position: absolute;
+//       height: 1px;
+//       width:300px;
+//       background: #ccd6f6;
+//       top:50%;
+//       opacity: 0.3;
+//     }
+//   }
+// }
+
+
+// @media only screen and (max-screen: 768px) {
+//   .section-block {
+//     h3 {
+//       &::after {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-screen: 1080px) {
+//   .section-block {
+//     h3 {
+//       &::after {
+//         width: 200px;
+//       }
+//     }
+//   }
+// }
+
+
+// Text link
+.text-link {
+  position: relative;
+  &::after {
+    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    background: #00E0BC;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 2px);
+    width:0;
+    right:0;
+    height: 2px;
+  }
+  &:hover::after {
+    width:98%;
+    left: 0;
+  }
+}
+
+// Scroll bar design
+::-webkit-scrollbar {
+  width:6px;
+}
+
+
+::-webkit-scroll-track {
+  border-radius: 8px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #495670;
+  border-radius: 8px;
+}

@@ -21,7 +21,7 @@ export const works = [
     img: "/axens.png",
     content: "A web app for visualizing data using graphs. I had to analyze recolted data using regressions methods (linear, poynomial, power, exponential, Theil-sen, and strong polynomial) and regression graph rendering. This web app was made to be a Grafana plugin.",
     tags:["React.js", "Typescript", "ML.js", "Redux", "Visx Airbnb", "Material-UI"],
-    source:"https://app.trendex.vip/"
+    source:null
   },
   {
     category: "Free-lance Project",

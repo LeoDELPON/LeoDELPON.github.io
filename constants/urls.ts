@@ -1,8 +1,7 @@
 
 
-export const GITHUB = "";
-export const TWITTER = "";
-export const LINKEDIN = "";
+export const GITHUB = "https://github.com/LeoDELPON";
+export const LINKEDIN = "https://www.linkedin.com/in/%F0%9F%97%A1-l%C3%A9o-d-a788b6122/";
 export const MALT = "https://www.malt.fr/profile/leodelpon?q=leo+delpon&searchid=62128ca6f7f8664167924b50";
 
 

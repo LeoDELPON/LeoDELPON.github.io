@@ -57,17 +57,63 @@ const Navigation = () => {
         <button className="block lg:hidden">
           <Hamburger onClickHamburgerLogo={onDisplaySideBar} />
         </button>
-        <aside className="md:hidden">
-          <nav>
-            <ul className="lg:flex hidden">
-              <li className="text-white">About</li>
-              <li>Experience</li>
-              <li>Work</li>
-              <li>Contact</li>
-              <li>Resume</li>
-            </ul>
+        <div
+          className={`${
+            displaySideBar ? "block" : "hidden w-0"
+          } lg:hidden fixed z-50 w-[180px] h-screen right-3  bg-darker-blue rounded-lg`}
+        >
+          <nav className="grid grid-row-3 h-full">
+            <div className="p-2" onClick={() => onDisplaySideBar()}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+            <div className="grid place-content-center space-y-5">
+              <div className="font-medium text-white tracking-wider">
+                <Link href="/#about">
+                  <a>.about( )</a>
+                </Link>
+              </div>
+              <div className="font-medium text-white tracking-wider">
+                <Link href="#about">
+                  <a>.experience( )</a>
+                </Link>
+              </div>
+              <div className="font-medium text-white tracking-wider">
+                <Link href="#about">
+                  <a>.work( )</a>
+                </Link>
+              </div>
+              <div className="font-medium text-white tracking-wider">
+                <Link href="mailto:delponleo@gmail.com">
+                  <a>.contact( )</a>
+                </Link>
+              </div>
+            </div>
+            <div className="px-8">
+              <Link href="/resume_leo_delpon.pdf">
+                <a
+                  className="button text-emeraud-blue-bright border text-nav-sm font-medium border-emeraud-blue-bright flex items-center justify-center px-3 py-4 rounded transition duration-300 linear hover:bg-emeraud-blue-light"
+                  download="resume_leo_delpon.pdf"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              </Link>
+            </div>
           </nav>
-        </aside>
+        </div>
       </div>
     </nav>
   );

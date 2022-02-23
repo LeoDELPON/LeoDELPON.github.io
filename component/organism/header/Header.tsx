@@ -4,7 +4,7 @@ import RegularBtn from "../../atoms/buttons/regular";
 
 const Header = () => {
   return (
-    <div className="grid place-content-center h-header pb-8 md:pb-2">
+    <div className="grid place-content-center h-header pt-12 pb-8 md:pb-2">
       <p className="text-emeraud-blue-bright text-sm text font-medium tracking-wider pb-6">
         Hi, my name is
       </p>

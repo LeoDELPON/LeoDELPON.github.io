@@ -10,8 +10,8 @@ const Header = () => {
   let contentPresentation = React.useRef<null | HTMLDivElement>(null);
 
   React.useEffect(() => {
-    horFadeInPres(titlePresentation.current, 3, 1);
-    vertFadeInPres(contentPresentation.current, 3, 1.5);
+    horFadeInPres(titlePresentation.current, 2, 1);
+    vertFadeInPres(contentPresentation.current, 2, 1.5);
   }, []);
 
   return (

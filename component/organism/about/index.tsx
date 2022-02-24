@@ -8,7 +8,7 @@ const About = (): JSX.Element => {
   let aboutRef = React.useRef(null);
 
   React.useEffect(() => {
-    vertFadeInScroll(aboutRef.current);
+    vertFadeInScroll(aboutRef.current, -80);
   }, []);
 
   return (

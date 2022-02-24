@@ -1,8 +1,20 @@
 import React from "react";
 
+import { vertFadeInScroll } from "../../../gsap/verticalFadeIn";
+
 const Experience = () => {
+  let experienceRef = React.useRef(null);
+
+  React.useEffect(() => {
+    vertFadeInScroll(experienceRef.current, 80);
+  }, []);
+
   return (
-    <section className="grid 2xl:px-52 py-16" id="#experience">
+    <section
+      className="grid 2xl:px-52 py-16"
+      id="#experience"
+      ref={experienceRef}
+    >
       <div className="section-block flex items-center justify-start">
         <span className="text-2xl md:text-3xl font-medium text-emeraud-blue-bright">
           02.

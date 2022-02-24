@@ -14,10 +14,10 @@ export const vertFadeInPres = (item:any, duration: number, delay: number) => {
     }).delay(delay);
 }
 
-export const vertFadeInScroll = (item: any) => {
+export const vertFadeInScroll = (item: any, translateXStart: number) => {
     gsap.fromTo(item, {
         opacity: 0,
-        translateX: -80
+        translateX: translateXStart
     },
         {
             opacity: 1,

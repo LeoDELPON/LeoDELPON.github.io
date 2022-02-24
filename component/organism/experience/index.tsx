@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <section
       className="grid 2xl:px-52 py-16 overflow-x-hidden"
-      id="#experience"
+      id="experience"
       ref={experienceRef}
     >
       <div className="section-block flex items-center justify-start">

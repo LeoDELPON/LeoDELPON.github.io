@@ -14,7 +14,7 @@ const About = (): JSX.Element => {
   return (
     <section
       className="grid place-content-center 2xl:px-52 py-16 "
-      id="#about"
+      id="about"
       ref={aboutRef}
     >
       <div className="section-block flex items-center">

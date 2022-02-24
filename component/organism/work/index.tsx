@@ -5,7 +5,7 @@ import { works } from "../../../constants/works";
 
 const Work = () => {
   return (
-    <section className="grid 2xl:px-52 py-16" id="#experience">
+    <section className="grid 2xl:px-52 py-16" id="work">
       <div className="section-block flex items-center justify-start">
         <span className="text-2xl md:text-3xl font-medium text-emeraud-blue-bright">
           03.

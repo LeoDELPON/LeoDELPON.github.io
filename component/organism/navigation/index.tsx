@@ -41,7 +41,7 @@ const Navigation = () => {
             className="text-white text-nav-sm font-medium tracking-wider"
             ref={aboutRef}
           >
-            <Link href="/#about" scroll={false}>
+            <Link href="#about" scroll={false}>
               <a>.about( )</a>
             </Link>
           </li>
@@ -49,7 +49,7 @@ const Navigation = () => {
             className="text-white text-nav-sm font-medium tracking-wider"
             ref={experienceRef}
           >
-            <Link href="#about">
+            <Link href="#experience">
               <a>.experience( )</a>
             </Link>
           </li>
@@ -57,7 +57,7 @@ const Navigation = () => {
             className="text-white text-nav-sm font-medium tracking-wider"
             ref={workRef}
           >
-            <Link href="#about">
+            <Link href="#work">
               <a>.work( )</a>
             </Link>
           </li>
@@ -108,17 +108,17 @@ const Navigation = () => {
             </div>
             <div className="grid place-content-center space-y-5">
               <div className="font-medium text-white tracking-wider">
-                <Link href="/#about">
+                <Link href="#about">
                   <a>.about( )</a>
                 </Link>
               </div>
               <div className="font-medium text-white tracking-wider">
-                <Link href="#about">
+                <Link href="#experience">
                   <a>.experience( )</a>
                 </Link>
               </div>
               <div className="font-medium text-white tracking-wider">
-                <Link href="#about">
+                <Link href="#work">
                   <a>.work( )</a>
                 </Link>
               </div>

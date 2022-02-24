@@ -11,7 +11,7 @@ const Experience = () => {
 
   return (
     <section
-      className="grid 2xl:px-52 py-16"
+      className="grid 2xl:px-52 py-16 overflow-x-hidden"
       id="#experience"
       ref={experienceRef}
     >

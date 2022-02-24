@@ -31,7 +31,10 @@ const WorkComponent = ({
   }, []);
 
   return (
-    <div className="relative grid md:grid-cols-12 py-16" ref={workRefComponent}>
+    <div
+      className="relative grid md:grid-cols-12 py-16 overflow-x-hidden"
+      ref={workRefComponent}
+    >
       {!isPair &&
         (source ? (
           <Link href={source}>

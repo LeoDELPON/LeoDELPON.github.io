@@ -2,9 +2,21 @@ import React from "react";
 
 import Link from "next/link";
 
+import { vertFadeInScroll } from "../../../gsap/verticalFadeIn";
+
 const About = (): JSX.Element => {
+  let aboutRef = React.useRef(null);
+
+  React.useEffect(() => {
+    vertFadeInScroll(aboutRef.current);
+  }, []);
+
   return (
-    <section className="grid place-content-center 2xl:px-52 pb-16" id="#about">
+    <section
+      className="grid place-content-center 2xl:px-52 py-16 "
+      id="#about"
+      ref={aboutRef}
+    >
       <div className="section-block flex items-center">
         <span className="text-2xl md:text-3xl font-medium text-emeraud-blue-bright">
           01.

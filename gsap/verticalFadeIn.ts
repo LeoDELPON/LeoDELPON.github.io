@@ -17,7 +17,7 @@ export const vertFadeInPres = (item:any, duration: number, delay: number) => {
 export const vertFadeInScroll = (item: any) => {
     gsap.fromTo(item, {
         opacity: 0,
-        translateX: -40
+        translateX: -80
     },
         {
             opacity: 1,

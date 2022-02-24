@@ -2,6 +2,8 @@ import React from "react";
 
 import Link from "next/link";
 
+import { vertFadeInScroll } from "../../../gsap/verticalFadeIn";
+
 interface WorkComponentProps {
   title: string;
   category: string;
@@ -22,8 +24,14 @@ const WorkComponent = ({
   index,
 }: WorkComponentProps) => {
   const isPair = index % 2 !== 0;
+  let workRefComponent = React.useRef(null);
+
+  React.useEffect(() => {
+    vertFadeInScroll(workRefComponent.current, isPair ? 80 : -80);
+  }, []);
+
   return (
-    <div className="relative grid md:grid-cols-12 py-16">
+    <div className="relative grid md:grid-cols-12 py-16" ref={workRefComponent}>
       {!isPair &&
         (source ? (
           <Link href={source}>

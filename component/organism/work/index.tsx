@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import WorkComponent from "../../molecule/work/workComponent";
-import { works } from "../../../constants/works";
+import WorkComponent from '../../molecule/work/workComponent';
+import { works } from '../../../constants/works';
 
 const Work = () => {
   return (
@@ -17,15 +17,17 @@ const Work = () => {
       <div className="grid">
         {works.map((work, index) => {
           return (
-            <WorkComponent
-              title={work.title}
-              category={work.category}
-              content={work.content}
-              pins={work.tags}
-              imageSource={work.img}
-              source={work.source}
-              index={index}
-            />
+            <div key={index}>
+              <WorkComponent
+                title={work.title}
+                category={work.category}
+                content={work.content}
+                pins={work.tags}
+                imageSource={work.img}
+                source={work.source}
+                index={index}
+              />
+            </div>
           );
         })}
       </div>

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Link from "next/link";
+import Link from 'next/link';
 
-import { vertFadeInScroll } from "../../../gsap/verticalFadeIn";
+import { vertFadeInScroll } from '../../../gsap/verticalFadeIn';
 
 interface WorkComponentProps {
   title: string;
@@ -10,7 +10,7 @@ interface WorkComponentProps {
   imageSource: string;
   content: string;
   pins: string[];
-  source: string | null;
+  source: string;
   index: number;
 }
 
@@ -52,7 +52,7 @@ const WorkComponent = ({
         ))}
       <div
         className={`md:col-span-6 relative z-20 ${
-          isPair ? "col-start-1" : "col-start-7"
+          isPair ? 'col-start-1' : 'col-start-7'
         } my-auto`}
       >
         {source ? (
@@ -61,14 +61,14 @@ const WorkComponent = ({
               <div className={``}>
                 <h4
                   className={`text-emeraud-blue-bright font-medium text-sm tracking-wide ${
-                    isPair ? "text-left" : "text-right"
+                    isPair ? 'text-left' : 'text-right'
                   }`}
                 >
                   {category}
                 </h4>
                 <h3
                   className={`text-white-grayish font-medium tracking-wider text-xl ${
-                    isPair ? "text-left" : "text-right"
+                    isPair ? 'text-left' : 'text-right'
                   }`}
                 >
                   {title}
@@ -80,14 +80,14 @@ const WorkComponent = ({
           <div className={``}>
             <h4
               className={`text-emeraud-blue-bright font-medium text-sm tracking-wide ${
-                isPair ? "text-left" : "text-right"
+                isPair ? 'text-left' : 'text-right'
               }`}
             >
               {category}
             </h4>
             <h3
               className={`text-white-grayish font-medium tracking-wider text-xl ${
-                isPair ? "text-left" : "text-right"
+                isPair ? 'text-left' : 'text-right'
               }`}
             >
               {title}
@@ -97,7 +97,7 @@ const WorkComponent = ({
         <div className="pt-4">
           <div
             className={`text-white-grayish text-sm p-4 bg-dark-blue-bright rounded-sm shadow-xl font-medium ${
-              isPair ? "text-left" : "text-right"
+              isPair ? 'text-left' : 'text-right'
             }`}
           >
             <p className="opacity-60">{content}</p>
@@ -105,7 +105,7 @@ const WorkComponent = ({
         </div>
         <div
           className={`flex flex-wrap space-x-2 pt-4 ${
-            isPair ? "justify-start" : "justify-end"
+            isPair ? 'justify-start' : 'justify-end'
           }`}
         >
           {pins.map((pin) => (
@@ -116,7 +116,7 @@ const WorkComponent = ({
         </div>
         <div
           className={`grid pt-2 ${
-            isPair ? "place-items-start" : "place-items-end"
+            isPair ? 'place-items-start' : 'place-items-end'
           }`}
         >
           {source && (

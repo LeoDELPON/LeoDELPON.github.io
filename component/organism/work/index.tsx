@@ -24,7 +24,7 @@ const Work = () => {
                 content={work.content}
                 pins={work.tags}
                 imageSource={work.img}
-                source={work.source}
+                source={work.source ?? ''}
                 index={index}
               />
             </div>

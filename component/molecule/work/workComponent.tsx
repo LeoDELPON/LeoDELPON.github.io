@@ -108,8 +108,11 @@ const WorkComponent = ({
             isPair ? 'justify-start' : 'justify-end'
           }`}
         >
-          {pins.map((pin) => (
-            <span className="px-4 bg-white my-2 opacity-40 text-sm rounded-full flex items-center font-medium text-gray-700">
+          {pins.map((pin, index) => (
+            <span
+              key={`${pin}_${index}`}
+              className="px-4 bg-white my-2 opacity-40 text-sm rounded-full flex items-center font-medium text-gray-700"
+            >
               {pin}
             </span>
           ))}

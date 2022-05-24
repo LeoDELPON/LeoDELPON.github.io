@@ -2,6 +2,7 @@ export const works = [
   {
     category: "Free-lance Project",
     title: "6FireInvest",
+    image: '/6fire-invest.png',
     content: "This is a two application's plateform with one blog where we can post articles and another part for crypto trading",
     tags: ["Next.js", "Node.js", "Typescript", "Stripe", "TailwindCSS"],
     source: "https://6fireinvest.com/"

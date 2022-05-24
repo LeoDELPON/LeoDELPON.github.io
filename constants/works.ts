@@ -1,6 +1,13 @@
 export const works = [
   {
     category: "Free-lance Project",
+    title: "6FireInvest",
+    content: "This is a two application's plateform with one blog where we can post articles and another part for crypto trading",
+    tags: ["Next.js", "Node.js", "Typescript", "Stripe", "TailwindCSS"],
+    source: "https://6fireinvest.com/"
+  },
+  {
+    category: "Free-lance Project",
     title: "TokenArt",
     img: "/TokenArt.png",
     content: "A platform for smart contract deploying and NFT minting. I had to deploy a hexagonal architecture project and implement smart contract deploying process and NFT minting. I also implemented a web3 auth using metamask and ether.js",

@@ -1,6 +1,14 @@
 export const works = [
   {
     category: "Free-lance Project",
+    title: "Sayna Work",
+    img:"/Sayna.png",
+    content: "This dashboard is monitoring free-lance profile for Sayna work application. I had to develop an RESTFUL API with CRUD features",
+    tags: ["Express.js", "Typescript", "Node.js"],
+    source: null
+  },
+  {
+    category: "Free-lance Project",
     title: "6FireInvest",
     img: '/6fire-invest.png',
     content: "This is a two application's plateform with one blog where we can post articles and another part for crypto trading",

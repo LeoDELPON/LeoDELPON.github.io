@@ -25,7 +25,7 @@ const Services = () => {
           Service.retrieve( )
         </h3>
       </div>
-      <div className="grid grid-cols-3 space-x-8 py-8">
+      <div className="grid md:grid-cols-3 grid-cols-1 space-x-8 py-8">
         <ServiceGrid
           title="Full-stack developer"
           content="As a student, I offer my services to develop your web application. It can be a portfolio site or a specific page to realize. Moreover, I can also develop website marketplace while accompanying you on the choices in your payment system or other micro-services such as emailing. Then, I can accompany you for the deployment of your website. Finally, I also have SEO skills that will help you increase your ranking in search engines.

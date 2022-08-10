@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Link from "next/link";
+import Link from 'next/link';
 
-import { vertFadeInScroll } from "../../../gsap/verticalFadeIn";
+import { vertFadeInScroll } from '../../../gsap/verticalFadeIn';
 
 const About = (): JSX.Element => {
   let aboutRef = React.useRef(null);
@@ -13,73 +13,97 @@ const About = (): JSX.Element => {
 
   return (
     <section
-      className="grid place-content-center 2xl:px-52 py-16 "
+      className="grid py-16 place-content-center 2xl:px-52 "
       id="about"
       ref={aboutRef}
     >
-      <div className="section-block flex items-center">
-        <span className="text-2xl md:text-3xl font-medium text-emeraud-blue-bright">
+      <div className="flex items-center section-block">
+        <span className="text-2xl font-medium md:text-3xl text-emeraud-blue-bright">
           01.
         </span>
-        <h3 className="text-2xl md:text-3xl font-bold text-white-grayish pl-4 w-full tracking-wider">
+        <h3 className="w-full pl-4 text-2xl font-bold tracking-wider md:text-3xl text-white-grayish">
           About.me( )
         </h3>
       </div>
-      <div className="grid lg:grid-cols-2 pt-8">
+      <div className="grid pt-8 lg:grid-cols-2">
         <div className="">
-          <p className="text-white-grayish  font-medium">
+          <p className="font-medium text-white-grayish">
             Hello to you my dear visitor! My name is Léo and I am currently a
             student in an engineering college. I love making websites for fun ,
             discovering new technologies and best practices. My interest in web
             development started in 2020 when I had my first internship. I was
-            working for{" "}
+            working for{' '}
             <Link href="https://www.idaia.group/fr/?levier=SEA&gclid=CjwKCAiAgbiQBhAHEiwAuQ6BkrrJTr66BIv1qufyIJNWI4BKQGizI_Uk-xEu8bTsAvM4GXqg_K-o8RoCXF8QAvD_BwE">
-              <a className="text-link text-emeraud-blue-bright opacity-100 hover:text-emeraud-blue transition duration-300 linear">
+              <a className="transition duration-300 opacity-100 text-link text-emeraud-blue-bright hover:text-emeraud-blue linear">
                 IDAIA
               </a>
-            </Link>{" "}
+            </Link>{' '}
             as backend developer in .NET Core. It turns out that I learnt a lot
             thanks to this internship. During my third year of college, I did
-            another one but at{" "}
+            another one but at{' '}
             <Link href="https://www.lectra.com/fr">
-              <a className="text-link text-emeraud-blue-bright opacity-100 hover:text-emeraud-blue transition duration-300 linear">
+              <a className="transition duration-300 opacity-100 text-link text-emeraud-blue-bright hover:text-emeraud-blue linear">
                 Lectra
               </a>
-            </Link>{" "}
+            </Link>{' '}
             as a frontend developer using React.js/Redux/Redux-Saga. With these
             two enriching experiences, I started doing free-lancing as
             full-stack developer.
           </p>
-          <p className="text-white-grayish font-medium pt-4">
+          <p className="pt-4 font-medium text-white-grayish">
             Beside web development, I also love doing web scraping / crawling.
             After scraping datas, I like making dashboard with anaylized and
             rendered data.
           </p>
-          <p className="text-white-grayish font-medium pt-4">
+          <p className="pt-4 font-medium text-white-grayish">
             The last but not the least, I started to work in crypto universe. I
-            developed a simple website for{" "}
+            developed a simple website for{' '}
             <Link href="https://blitznetwork.netlify.app/onboarding/individual/">
-              <a className="text-link text-emeraud-blue-bright opacity-100 hover:text-emeraud-blue transition duration-300 linear">
+              <a className="transition duration-300 opacity-100 text-link text-emeraud-blue-bright hover:text-emeraud-blue linear">
                 Blitz Network
               </a>
-            </Link>{" "}
-            company. I also worked for{" "}
+            </Link>{' '}
+            company. I also worked for{' '}
             <Link href="https://slp-new.netlify.app/">
-              <a className="text-link text-emeraud-blue-bright opacity-100 hover:text-emeraud-blue transition duration-300 linear">
+              <a className="transition duration-300 opacity-100 text-link text-emeraud-blue-bright hover:text-emeraud-blue linear">
                 SLP Foundation
               </a>
-            </Link>{" "}
+            </Link>{' '}
             which is a foundation created by BCH stakeholders in late 2019.
-            Currently I am developping a new website version for{" "}
+            Currently I am developping a new website version for{' '}
             <Link href="https://www.tokenart.org/tokenart">
-              <a className="text-link text-emeraud-blue-bright opacity-100 hover:text-emeraud-blue transition duration-300 linear">
+              <a className="transition duration-300 opacity-100 text-link text-emeraud-blue-bright hover:text-emeraud-blue linear">
                 Tokenart
               </a>
             </Link>
           </p>
         </div>
-        <div className="flex justify-center items-center py-8">
+        <div className="flex items-center justify-center py-8">
           <img className="lg:w-80 lg:h-80" src="/leo-profil.jfif" />
+        </div>
+      </div>
+
+      <div className="grid items-center pt-20 lg:grid-cols-2">
+        <div className="flex items-center justify-center py-8">
+          <img className="lg:w-80 lg:h-80" src="/remi-rollais.png" />
+        </div>
+
+        <div className="">
+          <p className="font-medium text-white-grayish">
+            Hello to you young entrepreneur, young entrepreneur ! 💻
+          </p>
+          <p className="pt-4 font-medium text-white-grayish">
+            📚 I am currently a student in BAC + 4 of engineering school in
+            computer science (CESI Bordeaux). At the same time, I am a
+            freelancer in web / Web3 development.
+          </p>
+          <p className="pt-4 font-medium text-white-grayish">
+            ⚡ My favorite framework is Next.js, which is an overlay of the
+            React.js framework <br />⚡ My front-end skills are Next.js,
+            React.js, Typescript, vanilla Javascript, tailwindCSS, Sass/Scss,
+            Material-UI, Visx and of course HTML and CSS. <br />
+            🐞 I also love coding mods in Lua 🙂
+          </p>
         </div>
       </div>
     </section>

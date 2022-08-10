@@ -37,11 +37,61 @@ const Navigation = () => {
   return (
     <>
       <nav className="grid grid-cols-12 pt-4">
-        <div className="col-span-6 lg:pl-8 pl-4">logo</div>
-        <div className="col-span-6 grid place-self-end pr-4 lg:pr-8">
-          <ul className="lg:flex hidden space-x-5 items-center">
+        <div className="col-span-6 pl-4 place-items-end lg:pl-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width="42"
+            height="42"
+            viewBox="0 0 240 240"
+          >
+            <defs>
+              <clipPath id="clip-MatR_Logo">
+                <rect width="240" height="240" />
+              </clipPath>
+            </defs>
+            <g
+              id="MatR_Logo"
+              data-name="MatR Logo"
+              clipPath="url(#clip-MatR_Logo)"
+            >
+              <g
+                id="Composant_2_1"
+                data-name="Composant 2 – 1"
+                transform="translate(15 57)"
+              >
+                <rect
+                  id="Rectangle_2"
+                  data-name="Rectangle 2"
+                  width="180"
+                  height="38"
+                  rx="16"
+                  fill="#a2f5b5"
+                />
+                <path
+                  id="Polygone_2"
+                  data-name="Polygone 2"
+                  d="M53.786,14.435a16,16,0,0,1,24.428,0l31.5,37.23A16,16,0,0,1,97.5,78h-63A16,16,0,0,1,22.284,51.665Z"
+                  transform="translate(109.077 3.355) rotate(90)"
+                  fill="#a2f5b5"
+                />
+                <rect
+                  id="Rectangle_4"
+                  data-name="Rectangle 4"
+                  width="180"
+                  height="38"
+                  rx="16"
+                  transform="translate(0 99)"
+                  fill="#a2f5b5"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div className="grid col-span-6 pr-4 place-self-end lg:pr-8">
+          <ul className="items-center hidden space-x-5 lg:flex">
             <li
-              className="text-white text-nav-sm font-medium tracking-wider"
+              className="font-medium tracking-wider text-white text-nav-sm"
               ref={aboutRef}
             >
               <Link href="#about" scroll={false}>
@@ -49,7 +99,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li
-              className="text-white text-nav-sm font-medium tracking-wider"
+              className="font-medium tracking-wider text-white text-nav-sm"
               ref={experienceRef}
             >
               <Link href="#experience">
@@ -57,7 +107,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li
-              className="text-white text-nav-sm font-medium tracking-wider"
+              className="font-medium tracking-wider text-white text-nav-sm"
               ref={workRef}
             >
               <Link href="#work">
@@ -65,7 +115,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li
-              className="text-white text-nav-sm font-medium tracking-wider"
+              className="font-medium tracking-wider text-white text-nav-sm"
               ref={serviceRef}
             >
               <Link href="#service">
@@ -73,7 +123,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li
-              className="text-white text-nav-sm font-medium tracking-wider"
+              className="font-medium tracking-wider text-white text-nav-sm"
               ref={contactRef}
             >
               <Link href="mailto:delponleo@gmail.com">
@@ -83,7 +133,7 @@ const Navigation = () => {
             <li ref={btnRef}>
               <Link href="/resume_leo_delpon.pdf">
                 <a
-                  className="button text-emeraud-blue-bright border text-nav-sm font-medium border-emeraud-blue-bright flex items-center px-3 py-4 rounded transition duration-300 linear hover:bg-emeraud-blue-light"
+                  className="flex items-center px-3 py-4 font-medium transition duration-300 border rounded button text-emeraud-blue-bright text-nav-sm border-emeraud-blue-bright linear hover:bg-emeraud-blue-light"
                   download="resume_leo_delpon.pdf"
                   rel="noopener noreferrer"
                 >
@@ -100,11 +150,11 @@ const Navigation = () => {
               displaySideBar ? 'block' : 'hidden w-0'
             } lg:hidden fixed z-50 w-[180px] h-screen right-3  bg-darker-blue rounded-lg`}
           >
-            <nav className="grid grid-row-3 h-full">
+            <nav className="grid h-full grid-row-3">
               <div className="p-2" onClick={() => onDisplaySideBar()}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-white"
+                  className="w-6 h-6 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -117,28 +167,28 @@ const Navigation = () => {
                   />
                 </svg>
               </div>
-              <div className="grid place-content-center space-y-5">
-                <div className="font-medium text-white tracking-wider">
+              <div className="grid space-y-5 place-content-center">
+                <div className="font-medium tracking-wider text-white">
                   <Link href="#about">
                     <a>.about( )</a>
                   </Link>
                 </div>
-                <div className="font-medium text-white tracking-wider">
+                <div className="font-medium tracking-wider text-white">
                   <Link href="#experience">
                     <a>.experience( )</a>
                   </Link>
                 </div>
-                <div className="font-medium text-white tracking-wider">
+                <div className="font-medium tracking-wider text-white">
                   <Link href="#work">
                     <a>.work( )</a>
                   </Link>
                 </div>
-                <div className="font-medium text-white tracking-wider">
+                <div className="font-medium tracking-wider text-white">
                   <Link href="#service">
                     <a>.service( )</a>
                   </Link>
                 </div>
-                <div className="font-medium text-white tracking-wider">
+                <div className="font-medium tracking-wider text-white">
                   <Link href="mailto:delponleo@gmail.com">
                     <a>.contact( )</a>
                   </Link>
@@ -147,7 +197,7 @@ const Navigation = () => {
               <div className="px-8">
                 <Link href="/resume_leo_delpon.pdf">
                   <a
-                    className="button text-emeraud-blue-bright border text-nav-sm font-medium border-emeraud-blue-bright flex items-center justify-center px-3 py-4 rounded transition duration-300 linear hover:bg-emeraud-blue-light"
+                    className="flex items-center justify-center px-3 py-4 font-medium transition duration-300 border rounded button text-emeraud-blue-bright text-nav-sm border-emeraud-blue-bright linear hover:bg-emeraud-blue-light"
                     download="resume_leo_delpon.pdf"
                     rel="noopener noreferrer"
                   >

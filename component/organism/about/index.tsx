@@ -82,30 +82,6 @@ const About = (): JSX.Element => {
           <img className="lg:w-80 lg:h-80" src="/leo-profil.jfif" />
         </div>
       </div>
-
-      <div className="grid items-center pt-20 lg:grid-cols-2">
-        <div className="flex items-center justify-center py-8">
-          <img className="lg:w-80 lg:h-80" src="/remi-rollais.png" />
-        </div>
-
-        <div className="">
-          <p className="font-medium text-white-grayish">
-            Hello to you young entrepreneur, young entrepreneur ! 💻
-          </p>
-          <p className="pt-4 font-medium text-white-grayish">
-            📚 I am currently a student in BAC + 4 of engineering school in
-            computer science (CESI Bordeaux). At the same time, I am a
-            freelancer in web / Web3 development.
-          </p>
-          <p className="pt-4 font-medium text-white-grayish">
-            ⚡ My favorite framework is Next.js, which is an overlay of the
-            React.js framework <br />⚡ My front-end skills are Next.js,
-            React.js, Typescript, vanilla Javascript, tailwindCSS, Sass/Scss,
-            Material-UI, Visx and of course HTML and CSS. <br />
-            🐞 I also love coding mods in Lua 🙂
-          </p>
-        </div>
-      </div>
     </section>
   );
 };

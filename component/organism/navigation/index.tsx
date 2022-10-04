@@ -36,7 +36,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="grid grid-cols-12 pt-4">
+      <nav className="grid grid-cols-12 pt-4 w-screen">
         <div className="col-span-6 pl-4 place-items-end lg:pl-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"

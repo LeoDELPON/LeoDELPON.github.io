@@ -43,7 +43,7 @@ const RootComponent = ({
           <p>Save the children</p>
         </a>
       </div>
-      <div className={`2xl:w-1840px w-full`}>
+      <div className={`w-screen`}>
         <Navigation />
         <main className="lg:px-24 px-8">{children}</main>
         <SideFooterLink />

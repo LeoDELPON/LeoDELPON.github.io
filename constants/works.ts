@@ -1,5 +1,13 @@
 export const works = [
   {
+    category: "Employee Project",
+    title: "Quantor Innovation",
+    img:"/quantor-innovation.png",
+    content: "Simple landing page for the company Quantor Innovation based in ENSEIRB MATMECA",
+    tags: ["Next.js", "Typescript", "TailwindCSS", "Static export"],
+    source: "https://quantor.fr/"
+  },
+  {
     category: "Free-lance Project",
     title: "Sayna Work",
     img:"/Sayna.png",
@@ -13,7 +21,7 @@ export const works = [
     img: '/6fire-invest.png',
     content: "This is a two application's plateform with one blog where we can post articles and another part for crypto trading",
     tags: ["Next.js", "Node.js", "Typescript", "Stripe", "TailwindCSS"],
-    source: "https://6fireinvest.com/"
+    source: "https://6fireinvest.fr/"
   },
   {
     category: "Free-lance Project",

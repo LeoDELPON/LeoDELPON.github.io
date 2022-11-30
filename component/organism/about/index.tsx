@@ -70,12 +70,7 @@ const About = (): JSX.Element => {
               </a>
             </Link>{' '}
             which is a foundation created by BCH stakeholders in late 2019.
-            Currently I am developping a new website version for{' '}
-            <Link href="https://www.tokenart.org/tokenart">
-              <a className="transition duration-300 opacity-100 text-link text-emeraud-blue-bright hover:text-emeraud-blue linear">
-                Tokenart
-              </a>
-            </Link>
+            Currently, I founded new free-lancer groups called <strong className="font-bold text-emeraud-blue-bright">MatR</strong> where we handle multiple projects from website developpment, mobile developpment, data science projets or electronic projects.
           </p>
         </div>
         <div className="flex items-center justify-center py-8">

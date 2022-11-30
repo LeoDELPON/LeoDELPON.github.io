@@ -21,8 +21,8 @@ const GetInTouch = () => {
         </h3>
       </div>
       <div className="flex items-center justify-center 2xl:px-76 opacity-50 text-white-grayish">
-        Currently, I am not looking for any new opportunities, nevertherless my
-        emailbox is always open !
+        Looking for a free-lancer for handling a web project from scratch ? I'm your man ! My emailbox will
+        always be open for new opportunities.
       </div>
       <div className="w-full grid place-items-center pt-4">
         <div className="w-44 pt-4 flex justify-center">

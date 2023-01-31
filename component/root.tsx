@@ -17,7 +17,7 @@ const RootComponent = ({
   bgColor = 'bg-dark-blue',
 }: RootComponentProps): JSX.Element => {
   return (
-    <div className={`w-full ${bgColor} grid place-items-center`}>
+    <div className={`w-full ${bgColor} grid place-items-center overflow-x-hidden`}>
       <div className="grid place-content-center w-full bg-black py-4">
         <a
           href="https://www.savethechildren.org/us/where-we-work/ukraine"

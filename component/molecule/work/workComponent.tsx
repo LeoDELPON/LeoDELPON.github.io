@@ -32,7 +32,7 @@ const WorkComponent = ({
 
   return (
     <div
-      className="relative grid md:grid-cols-12 py-16 overflow-x-hidden"
+      className="relative grid md:grid-cols-12 py-16 overflow-x-hidden w-full"
       ref={workRefComponent}
     >
       {!isPair &&
